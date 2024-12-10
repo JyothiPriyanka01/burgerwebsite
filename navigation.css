@@ -1,0 +1,35 @@
+.navigation {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .navigation h1 {
+    font-size: 2.5rem;
+    color: #ff8800;
+  }
+  
+  .navigation p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin: 20px 0;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: #0056b3;
+  }
+  

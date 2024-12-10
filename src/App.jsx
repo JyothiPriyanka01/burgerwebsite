@@ -1,4 +1,4 @@
-import { useState } from 'react'
+/* import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -33,3 +33,26 @@ function App() {
 }
 
 export default App
+ */
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./navigation.jsx";
+import CustomizeBurger from "./burger.jsx"; // Wrap of IngredientsList, BurgerPreview, OrderSummary
+import Orders from "./orders.jsx";
+import Help from "./help.jsx";
+import "./styles.css";
+
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigation />} />
+        <Route path="/customize" element={<CustomizeBurger />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/help" element={<Help />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
